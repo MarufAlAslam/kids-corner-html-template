@@ -2,6 +2,9 @@
   font-family: "Gloria Hallelujah", cursive;
   font-weight: normal;
 }
+.container {
+  max-width: 1200px !important;
+}
 .open-sans {
   font-family: "Open Sans", sans-serif;
 }
@@ -85,4 +88,134 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+
+.fs-14 {
+  font-size: 13px;
+}
+
+/* gallery */
+/* .slider-nav .slick-list.draggable,
+.slider-nav .slick-track {
+  width: 98% !important;
+  margin: auto;
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.z-2 {
+  z-index: 2;
+}
+
+.line::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #58301b;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.item-img {
+  width: 80px;
+}
+
+/* footer */
+.footer {
+  background-color: #cfe2f6;
+  position: relative;
+  top: -3px;
+  margin-bottom: -3px;
+}
+
+/* last */
+.last {
+  background-color: #b9cb3d;
+}
+
+.mobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .menu ul li:nth-child(2n) {
+    display: none !important;
+  }
+  .logo {
+    width: 180px;
+    display: block;
+  }
+  .menu img {
+    height: 90px;
+  }
+  .menu {
+    width: 100%;
+    overflow: hidden;
+  }
+  .menu .card-body {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .menu-item {
+    font-size: 20px;
+  }
+  .p-5 {
+    padding: 30px !important;
+  }
+  .bg .absolute.d-block {
+    position: unset !important;
+  }
+  .paper {
+    display: none;
+  }
+  .p-5 {
+    padding: 0 !important;
+  }
+  .slide {
+    padding: 20px !important;
+  }
+  .btn-next,
+  .btn-prev {
+    display: none;
+  }
+  .bg {
+    background-size: contain;
+    background-position: top;
+    background-color: #cfe2f6;
+  }
+  .badgee img {
+    height: 50px;
+  }
+  .gallery .card-body.absolute {
+    position: absolute !important;
+  }
+  .text-center.position-relative.line {
+    margin-top: 40px;
+  }
+
+  .span.d-inline-block.px-3.bg-white.z-2.position-relative {
+    background: #cfe2f6 !important;
+  }
+  .title {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .slider .btn-next,
+  .slider .btn-prev {
+    display: none !important;
+  }
+  .slider img {
+    display: block;
+    margin: auto;
+  }
+  .pc {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
 }
